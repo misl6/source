@@ -8,6 +8,7 @@ This buildsystem for the LEDE Linux distribution has been modified by Onion Corp
 
 ## Notes
 
+* This branch, `lede-17.01`, was used to build **Omega2 firmware version 0.2.2 and older**. For firmare version 0.3.0 and up, see the `openwrt-18.06` branch
 * ~~Due to incompatibilities with recent kernel updates, building a firmware with the `Ralink APSoC WiFi SoftAP driver` **will cause a kernel panic during boot**~~
 	* ~~This can be fixed by reflashing the Omega's firmware using the Omega's Bootloader and Ethernet Expansion~~
 	* ~~We are working on a new implementation of the WiFi driver, stay tuned!~~
@@ -36,7 +37,7 @@ Procedure:
 1. Install Docker on your system: https://www.docker.com/get-started
 2. Pull our Docker image by running:
 ```
-docker pull onion/omega2-source
+docker pull onion/omega2-source:lede
 ```
 3. Once the image has been pulled to your computer, you can run your own container based on the image: 
 ```
@@ -63,10 +64,11 @@ sudo apt-get update
 sudo apt-get install -y build-essential vim git wget curl subversion build-essential libncurses5-dev zlib1g-dev gawk flex quilt git-core unzip libssl-dev python-dev python-pip libxml-parser-perl default-jdk
 ```
 
-2. Download the Build System from Github:
+2. Download the Build System from Github and **switch to the lede-17.01 branch**:
 ```
 git clone https://github.com/OnionIoT/source.git
 cd source
+git checkout lede-17.01
 ```
 
 3. Prepare build system:
