@@ -57,6 +57,7 @@ CONFIG_TARGET_MULTI_PROFILE=y
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_mt7628 is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_mac1200r-v2 is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2 is not set
+# CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2dash is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2lte is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2pro is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2p is not set
@@ -94,10 +95,11 @@ CONFIG_TARGET_MULTI_PROFILE=y
 # CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_LinkIt7688 is not set
 # CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_mt7628 is not set
 # CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_mac1200r-v2 is not set
-CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2=y
+# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2 is not set
+CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2dash=y
 # CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2lte is not set
 # CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2pro is not set
-CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2p=y
+# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2p is not set
 # CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_pbr-d1 is not set
 # CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tama_w06 is not set
 # CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tplink_c20-v4 is not set
@@ -149,6 +151,7 @@ CONFIG_DEFAULT_mtd=y
 CONFIG_DEFAULT_netifd=y
 CONFIG_DEFAULT_odhcp6c=y
 CONFIG_DEFAULT_odhcpd-ipv6only=y
+CONFIG_DEFAULT_omega2-dash-base=y
 CONFIG_DEFAULT_opkg=y
 CONFIG_DEFAULT_ppp=y
 CONFIG_DEFAULT_ppp-mod-pppoe=y

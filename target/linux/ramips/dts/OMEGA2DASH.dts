@@ -1,0 +1,52 @@
+/dts-v1/;
+
+#include "OMEGA2.dtsi"
+
+/ {
+	model = "Onion Omega2 Dash";
+
+	memory@0 {
+		device_type = "memory";
+		reg = <0x0 0x8000000>;
+	};
+
+	new-leds {
+		compatible = "gpio-leds";
+
+		wifi {
+        	        label = "omega2dash:blue:wifi";
+                	gpios = <&gpio1 12 GPIO_ACTIVE_LOW>;
+        	};
+	};
+	
+	new-gpio-keys-polled {
+		compatible = "gpio-keys-polled";
+		#address-cells = <1>;
+		#size-cells = <0>;
+		poll-interval = <20>;
+
+		action {
+			label = "action";
+			gpios = <&gpio1 14 GPIO_ACTIVE_HIGH>;
+			linux,code = <KEY_RESTART>;
+		};
+	};
+};
+
+&firmware {
+	reg = <0x50000 0xfb0000>;
+};
+
+&system_led {
+	label = "omega2dash:amber:system";
+	gpios = <&gpio1 11 GPIO_ACTIVE_LOW>;
+};
+
+&pinctrl {
+        state_default: pinctrl0 {
+                uart1 {
+			ralink,group = "uart1";
+                        ralink,function = "gpio";
+                };
+        };
+};
