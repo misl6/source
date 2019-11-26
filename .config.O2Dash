@@ -46,7 +46,7 @@ CONFIG_TARGET_ramips_mt76x8=y
 # CONFIG_TARGET_ramips_rt288x is not set
 # CONFIG_TARGET_ramips_rt305x is not set
 # CONFIG_TARGET_ramips_rt3883 is not set
-CONFIG_TARGET_MULTI_PROFILE=y
+# CONFIG_TARGET_MULTI_PROFILE is not set
 # CONFIG_TARGET_ramips_mt76x8_Default is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_alfa-network_awusfree1 is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_wcr-1166ds is not set
@@ -57,7 +57,7 @@ CONFIG_TARGET_MULTI_PROFILE=y
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_mt7628 is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_mac1200r-v2 is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2 is not set
-# CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2dash is not set
+CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2dash=y
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2lte is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2pro is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_omega2p is not set
@@ -81,49 +81,11 @@ CONFIG_TARGET_MULTI_PROFILE=y
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_widora_neo-32m is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_miwifi-nano is not set
 # CONFIG_TARGET_ramips_mt76x8_DEVICE_zbtlink_zbt-we1226 is not set
-
-#
-# Target Devices
-#
-# CONFIG_TARGET_ALL_PROFILES is not set
-# CONFIG_TARGET_PER_DEVICE_ROOTFS is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_alfa-network_awusfree1 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_wcr-1166ds is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_duzun-dm06 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_gl-mt300n-v2 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_hc5661a is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_LinkIt7688 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_mt7628 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_mac1200r-v2 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2 is not set
-CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2dash=y
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2lte is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2pro is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_omega2p is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_pbr-d1 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tama_w06 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tplink_c20-v4 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tplink_c50-v3 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tplink_tl-mr3420-v5 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tl-wr840n-v4 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tl-wr840n-v5 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tl-wr841n-v13 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tplink_tl-wr842n-v5 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_tplink_tl-wr902ac-v3 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_u7628-01-128M-16M is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_vocore2 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_vocore2lite is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_wl-wn575a3 is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_widora_neo-16m is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_widora_neo-32m is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_wrtnode2p is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_wrtnode2r is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_miwifi-nano is not set
-# CONFIG_TARGET_DEVICE_ramips_mt76x8_DEVICE_zbtlink_zbt-we1226 is not set
 CONFIG_HAS_SUBTARGETS=y
 CONFIG_HAS_DEVICES=y
 CONFIG_TARGET_BOARD="ramips"
 CONFIG_TARGET_SUBTARGET="mt76x8"
+CONFIG_TARGET_PROFILE="DEVICE_omega2dash"
 CONFIG_TARGET_ARCH_PACKAGES="mipsel_24kc"
 CONFIG_DEFAULT_TARGET_OPTIMIZATION="-Os -pipe -mno-branch-likely -mips32r2 -mtune=24kc"
 CONFIG_CPU_TYPE="24kc"
@@ -5382,7 +5344,6 @@ CONFIG_PACKAGE_wpad=y
 # Base system
 #
 CONFIG_PACKAGE_omega2-base=y
-CONFIG_PACKAGE_omega2-dash-base=y
 # CONFIG_PACKAGE_omega2-lte-base is not set
 CONFIG_PACKAGE_onion-repo-keys=y
 

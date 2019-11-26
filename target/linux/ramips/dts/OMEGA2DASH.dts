@@ -19,16 +19,16 @@
         	};
 	};
 	
-	new-gpio-keys-polled {
+	gpio-keys-polled {
 		compatible = "gpio-keys-polled";
 		#address-cells = <1>;
 		#size-cells = <0>;
 		poll-interval = <20>;
 
-		action {
-			label = "action";
+		wps {
+			label = "wps";
 			gpios = <&gpio1 14 GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_RESTART>;
+			linux,code = <KEY_WPS_BUTTON>;
 		};
 	};
 };
